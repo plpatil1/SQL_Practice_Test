@@ -64,3 +64,14 @@ _Replication: Supports master-slave replication._
 
 #### Many-to-Many: Requires a junction table (e.g., orders and products).
 
+
+
+## Joins in SQL
+
+#### INNER JOIN: Returns records with matching values in both tables.
+
+#### LEFT JOIN: Returns all records from the left table + matched from right.
+
+#### RIGHT JOIN: All from the right + matched from left.
+
+#### FULL JOIN: All records when there is a match in either table (simulate with UNION in MySQL).
