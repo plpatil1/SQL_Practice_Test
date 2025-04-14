@@ -34,3 +34,26 @@ _Replication: Supports master-slave replication._
 *Primary Key:* Uniquely identifies each record.
 
 *Foreign Key:* Creates a relationship between two tables.
+
+## SQL Sub-Languages
+### DDL (Data Definition Language) – Structure:
+
+#### CREATE, ALTER, DROP, RENAME, TRUNCATE
+
+#### DML (Data Manipulation Language) – Data:
+
+#### INSERT, UPDATE, DELETE
+
+#### DQL (Data Query Language) – Queries:
+
+##### SELECT
+
+##### DCL (Data Control Language) – Access:
+
+##### GRANT, REVOKE
+
+##### TCL (Transaction Control Language) – Transactions:
+
+##### COMMIT, ROLLBACK, SAVEPOINT
+
+
