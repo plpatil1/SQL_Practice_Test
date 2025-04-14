@@ -57,3 +57,10 @@ _Replication: Supports master-slave replication._
 ##### COMMIT, ROLLBACK, SAVEPOINT
 
 
+## Relationships in MySQL
+#### One-to-One: One record in Table A is linked to one in Table B.
+
+#### One-to-Many: One record in Table A linked to multiple in Table B.
+
+#### Many-to-Many: Requires a junction table (e.g., orders and products).
+
