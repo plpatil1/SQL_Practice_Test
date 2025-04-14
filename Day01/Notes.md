@@ -3,13 +3,9 @@
 #### USE dbname;                  -- Select database
 #### DROP DATABASE dbname;        -- Delete database
 
-CREATE TABLE tablename (
-  id INT PRIMARY KEY AUTO_INCREMENT,
-  name VARCHAR(50),
-  age INT
-);
+##  What is MySQL?
+#### MySQL is an open-source Relational Database Management System (RDBMS) that uses SQL (Structured Query Language).
 
-SHOW TABLES;                 -- List tables
-DESCRIBE tablename;          -- Table structure
-DROP TABLE tablename;        -- Delete table
-RENAME TABLE old TO new;     -- Rename table
+#### Developed by MySQL AB, now owned by Oracle Corporation.
+
+
