@@ -25,7 +25,7 @@ Given the above relations solve the following queries.
 #### 12. Write a query to print book title, language, mrp and release date written by 'Jonathan'.
 #### 13. Write a query to print language wise total count of books.
 #### 14. Write a query to display publisher wise count of books.
-15. Write a query to display book details whose cost of book is more than 'MongoDB' book cost.
+#### 15. Write a query to display book details whose cost of book is more than 'MongoDB' book cost.
 
 
 
