@@ -11,8 +11,8 @@ publisher {empno, ename, job, mgr, hiredate, sal, comm, deptno, hobbyid}
 
 Given the above relations solve the following queries.
 
-1. Write a query to display all books whose language is 'English'.
-2. Write a query to display book title, mrp, and publisher name.
+### 1. Write a query to display all books whose language is 'English'.
+### 2. Write a query to display book title, mrp, and publisher name.
 3. Write a query to print publisher name and count the number book published by every publisher, arrange the data in ascending order of publisher name.
 4. Write a query to print publisher name who have published maximum number of book.
 5. Write a query to display all book details which were released in the month on 'May'.
