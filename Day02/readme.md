@@ -20,7 +20,7 @@ Given the above relations solve the following queries.
 #### 7. Write a query to display author’s first name and count the number of books written by every author, display the output in ascending order of the count.
 #### 8. Write a query which displays book title, language, mrp and release date which are published by the publisher 'Rupa Publications'.
 #### 9. Write a query to display the author firstname, lastname and his phone number in the following format 9850******.
-10. Write a query to display the title, release date, and mrp for all books whose book cost in more than 1200 and language is 'English'.
+#### 10. Write a query to display the title, release date, and mrp for all books whose book cost in more than 1200 and language is 'English'.
 11. Write a query to display publishers name allong with authors firstname, lastname, phone, and his emailid who have written the book on 'AutoCAD'.
 12. Write a query to print book title, language, mrp and release date written by 'Jonathan'.
 13. Write a query to print language wise total count of books.
