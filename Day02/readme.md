@@ -16,7 +16,7 @@ Given the above relations solve the following queries.
 #### 3. Write a query to print publisher name and count the number book published by every publisher, arrange the data in ascending order of publisher name.
 #### 4. Write a query to print publisher name who have published maximum number of book.
 #### 5. Write a query to display all book details which were released in the month on 'May'.
-6. Write a query to display book title, language, mrp, with author’s first name, last name with phone number and author's emailID for all books.
+#### 6. Write a query to display book title, language, mrp, with author’s first name, last name with phone number and author's emailID for all books.
 #### 7. Write a query to display author’s first name and count the number of books written by every author, display the output in ascending order of the count.
 8. Write a query which displays book title, language, mrp and release date which are published by the publisher 'Rupa Publications'.
 9. Write a query to display the author firstname, lastname and his phone number in the following format 9850******.
