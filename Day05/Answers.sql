@@ -30,3 +30,29 @@ mysql> select * from emp1 where ename like 'S%';
 
 
 
+
+
+
+mysql> select empno,ename,job,mgr,MAX(sal) as HighestSal  from emp1 group by empno limit 5;
++-------+--------+----------+------+------------+
+| empno | ename  | job      | mgr  | HighestSal |
++-------+--------+----------+------+------------+
+|  7369 | SMITH  | CLERK    | 7902 |     800.00 |
+|  7499 | ALLEN  | SALESMAN | 7698 |    1600.00 |
+|  7521 | WARD   | SALESMAN | 7698 |    1250.00 |
+|  7566 | JONES  | MANAGER  | 7839 |    2975.00 |
+|  7654 | MARTIN | SALESMAN | 7698 |    1250.00 |
++-------+--------+----------+------+------------+
+5 rows in set (0.00 sec)
+
+
+
+
+
+
+
+
+
+
+
+
