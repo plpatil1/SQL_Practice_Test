@@ -66,6 +66,30 @@ mysql> select d.*, COUNT(e.deptno) from dept d join emp1 e using(deptno) group b
 
 
 
+mysql> select e.ename, h.hobbyname from emp1 e join hobby h using(hobbyid);
++--------+-------------+
+| ename  | hobbyname   |
++--------+-------------+
+| WARD   | Reading     |
+| KING   | Reading     |
+| MARTIN | Hiking      |
+| BLAKE  | Hiking      |
+| CLARK  | Photography |
+| TURNER | Photography |
+| JONES  | Gaming      |
+| ADAMS  | Gaming      |
+| SCOTT  | Cooking     |
+| JAMES  | Cooking     |
+| FORD   | Sports      |
+| MILLER | Sports      |
+| SMITH  | Music       |
+| ALLEN  | Traveling   |
++--------+-------------+
+14 rows in set (0.00 sec)
+
+
+
+
 
 
 
