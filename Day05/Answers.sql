@@ -89,6 +89,20 @@ mysql> select e.ename, h.hobbyname from emp1 e join hobby h using(hobbyid);
 
 
 
+mysql> select * from emp1 where hobbyid like null;
+Empty set (0.00 sec)
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
