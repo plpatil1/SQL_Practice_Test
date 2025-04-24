@@ -56,3 +56,6 @@ mysql> select empno,ename,job,mgr,MAX(sal) as HighestSal  from emp1 group by emp
 
 
 
+
+
+
