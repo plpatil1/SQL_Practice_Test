@@ -53,6 +53,18 @@ mysql> select empno,ename,job,mgr,MAX(sal) as HighestSal  from emp1 group by emp
 
 
 
+mysql> select d.*, COUNT(e.deptno) from dept d join emp1 e using(deptno) group by deptno;
++--------+------------+------------+-----------------+
+| deptno | dname      | locationid | COUNT(e.deptno) |
++--------+------------+------------+-----------------+
+|     10 | ACCOUNTING |          1 |               3 |
+|     20 | RESEARCH   |          2 |               5 |
+|     30 | SALES      |          3 |               6 |
++--------+------------+------------+-----------------+
+3 rows in set (0.00 sec)
+
+
+
 
 
 
