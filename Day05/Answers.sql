@@ -123,6 +123,103 @@ mysql> select e.ename, h.hobbyname from emp1 e join hobby h using(hobbyid);
 
 
 
+mysql> select h.hobbyname, COUNT(e.hobbyid) as TotalEmp from emp1 e join hobby h using(hobbyid) group by e.hobbyid;
++-------------+----------+
+| hobbyname   | TotalEmp |
++-------------+----------+
+| Reading     |        2 |
+| Hiking      |        2 |
+| Photography |        2 |
+| Gaming      |        2 |
+| Cooking     |        2 |
+| Sports      |        2 |
+| Music       |        1 |
+| Traveling   |        1 |
++-------------+----------+
+8 rows in set (0.00 sec)
+
+
+
+
+
+
+
+
+mysql> select e.sal from emp1 e join hobby h using(hobbyid) where  h.hobbyname like'Horse-Riding';
+Empty set (0.00 sec)
+
+
+
+mysql> select e.ename, d.dname, l.locationname from emp1 e join dept d join location l on e.deptno = d.deptno and d.locationid = l.locationid ;
++--------+------------+--------------+
+| ename  | dname      | locationname |
++--------+------------+--------------+
+| CLARK  | ACCOUNTING | New York     |
+| KING   | ACCOUNTING | New York     |
+| MILLER | ACCOUNTING | New York     |
+| SMITH  | RESEARCH   | Dallas       |
+| JONES  | RESEARCH   | Dallas       |
+| SCOTT  | RESEARCH   | Dallas       |
+| ADAMS  | RESEARCH   | Dallas       |
+| FORD   | RESEARCH   | Dallas       |
+| ALLEN  | SALES      | Chicago      |
+| WARD   | SALES      | Chicago      |
+| MARTIN | SALES      | Chicago      |
+| BLAKE  | SALES      | Chicago      |
+| TURNER | SALES      | Chicago      |
+| JAMES  | SALES      | Chicago      |
++--------+------------+--------------+
+14 rows in set (0.00 sec)
+
+
+
+
+
+mysql> select deptno, SUM(sal) as Total from emp1 group by deptno  having deptno in( select deptno from dept where dname="IT Network") ;
+Empty set (0.00 sec)
+
+
+
+
+
+
+mysql> select( select sum(sal) from emp1 where job = "Manager")-( select sum(sal) from emp1 where job = "Assistant Manager") as Diff;
++------+
+| Diff |
++------+
+| NULL |
++------+
+1 row in set (0.00 sec)
+
+
+
+
+
+
+
+
+mysql> select e.ename, h.hobbyname from emp1 e, hobby h, location l, dept d  where e.hobbyid = h.hobbyid and e.deptno = d.deptno and d.locationid = l.locationid and l.locationname = "California";
+Empty set (0.00 sec)
+
+
+
+
+
+mysql> select d.dname, l.locationname from location l join dept d using(locationid) where l.locationid=1;
++------------+--------------+
+| dname      | locationname |
++------------+--------------+
+| ACCOUNTING | New York     |
+| MARKETING  | New York     |
++------------+--------------+
+2 rows in set (0.00 sec)
+
+
+
+
+
+mysql> select * from emp1 e, location l, dept d where d.deptno = e.deptno and l.locationid = d.locationid and l.locationid in( select l.locationid from location l, emp1 e, dept d where l.locationid = d.locationid and d.deptno = e.deptno and e.ename = "Jay");
+Empty set (0.00 sec)
 
 
 
